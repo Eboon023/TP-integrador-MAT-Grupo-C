@@ -32,7 +32,7 @@ def ingresar_b():
 
 def ingresar_d():
     # Funcion para validar si el numero ingresado es decimal
-    a = input("Ingrese el numero binario a convertir en decimal: ")
+    a = input("Ingrese el numero decimal a convertir en binario: ")
     if a == "" :
         print("No ingreso ningun dato, intentelo otra vez.")
         return ingresar_d()
@@ -50,9 +50,9 @@ while True :
     print("Convertir:\n1-Binario a decimal.\n2-Decimal a binario.\n3-Salir.")
     opcion = int(input("Ingrese que funcion desea utilizar: "))
     if opcion == 1 :
-        print("El numero ingresado en binario es: ",binario_a_decimal(ingresar_b()))
+        print("El numero ingresado en decimal es: ",binario_a_decimal(ingresar_b()))
     elif opcion == 2 :
-        print("El numero ingresado en decimal es: ",decimal_a_binario(ingresar_d()))
+        print("El numero ingresado en binario es: ",decimal_a_binario(ingresar_d()))
     elif opcion == 3 :
         break
     else :
